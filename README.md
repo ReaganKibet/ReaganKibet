@@ -1,5 +1,21 @@
 Hello
-I'm Reagan , a passionate developer with a focus on building practical, intelligent solutions using modern technologies. I enjoy working on projects that blend backend logic with real-world impact, from AI-powered tools to full-stack web applications.<br><br>💻 Tech I Work With:<br>Python, JavaScript, React, Node.js, PHP, MySQL, HTML/CSS, WordPress, AI/ML models, SQL, APIs<br><br>🚀 Current Focus:<br><br>AI chatbots for businesses<br><br>Inventory and restaurant management systems<br><br>Automating tasks using LLMs and custom APIs<br><br>🛠️ What You'll Find Here:<br>A collection of my personal and collaborative projects, experiments with AI, and tools built to solve specific problems. I love clean code, smart automation, and building things people actually use.<br><br>📬 Let’s Connect:<br>Feel free to explore my repositories or reach out if you’re interested in collaboration or feedback!
+I'm Reagan Langat, a developer passionate about building intelligent, practical systems that make a real impact. My focus is on blending backend logic, AI, and automation to create tools businesses actually use.<br><br>
+
+💻 Tech I Work With:<br>
+Python, JavaScript, React, Node.js, PHP, MySQL, SQL, APIs, AI/ML Models, HTML/CSS, WordPress<br><br>
+
+🚀 Current Focus:<br><br>
+• AI chatbots tailored for businesses (hospitality, retail, campaigns)<br>
+• Restaurant & inventory management systems<br>
+• Business process automation using LLMs and custom APIs<br>
+• Full-stack AI-powered applications<br><br>
+
+🛠️ What You'll Find Here:<br>
+Clean, problem-driven code. Automation projects that save time. Tools designed to scale. AI experiments that go beyond “cool” and actually solve problems.<br><br>
+
+📬 Let’s Connect:<br>
+If you’re building something bold—whether it’s automating workflows, enhancing customer experience, or scaling operations with AI—I’d love to collaborate!<br>
+
 
 
 ## 🌐 Socials:
