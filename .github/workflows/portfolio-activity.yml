@@ -1,0 +1,41 @@
+name: Portfolio activity
+
+# Refreshes activity.json, which the shipping log on reagansang.netlify.app reads.
+on:
+  schedule:
+    - cron: '*/30 * * * *'
+  workflow_dispatch:
+  push:
+    paths:
+      - 'scripts/portfolio-activity.mjs'
+      - '.github/workflows/portfolio-activity.yml'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: portfolio-activity
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      - name: Build activity.json
+        env:
+          ACTIVITY_TOKEN: ${{ secrets.ACTIVITY_TOKEN }}
+          SHOW_PRIVATE_NAMES: ${{ vars.SHOW_PRIVATE_NAMES }}
+          SHOW_PRIVATE_MESSAGES: ${{ vars.SHOW_PRIVATE_MESSAGES }}
+        run: node scripts/portfolio-activity.mjs
+      - name: Commit if changed
+        run: |
+          git config user.name "portfolio-activity[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add activity.json
+          git diff --cached --quiet && echo "No change" && exit 0
+          git commit -m "Update portfolio activity"
+          git push
